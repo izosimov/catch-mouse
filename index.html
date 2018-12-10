@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Catch mice</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+    </head>
+    <body>
+        <section class="main">
+            <header class="header">
+                <div class="character-bar">
+                    <div class="character-bar__level">
+                        <div class="character-bar__star">
+                            <p class="number number_small">1</p>
+                        </div>
+                    </div>
+
+                    <div class="character-bar__points">
+                        <p class="number" id="game-points">0</p>
+                    </div>
+
+                    <div class="character-bar__health">
+                        <div class="character-bar__heart character-bar__heart_alive"></div>
+                        <div class="character-bar__heart character-bar__heart_alive"></div>
+                        <div class="character-bar__heart character-bar__heart_alive"></div>
+                    </div>
+
+                </div>
+                <div class="start-bar">
+                    <button type="button" name="button" class="start-bar__start-btn">Начать</button>
+                    <button type="button" name="button" class="start-bar__question-btn">?</button>
+                </div>
+            </header>
+            <div class="playing-zone-wrapper">
+                <div class="playing-zone">
+                    <div class="playing-zone__hole"></div>
+                    <div class="playing-zone__hole"></div>
+                    <div class="playing-zone__hole"></div>
+                    <div class="playing-zone__hole"></div>
+                    <div class="playing-zone__hole"></div>
+                </div>
+            </div>
+        </section>
+        <div class="popup dn" id="popup-game-over">
+            <div class="popup__header">
+                <p class="popup__title">Игра завершена</p>
+            </div>
+            <p class="popup__description">Поздравляем! Вы набрали:</p>
+            <p class="popup__result">512 <span class="popup__result-mini">очков!</span></p>
+            <div class="popup__accept">
+                <p class="popup__text-big">Ок</p>
+            </div>
+        </div>
+        <div class="popup dn" id="popup-rules">
+            <div class="popup__header">
+                <p class="popup__title">Правила игры</p>
+            </div>
+            <ul class="popup__rules-list">
+                <li class="popup__rules-item">В одной из 5-ти норок в случайном порядке периодически появляется мышь 🐭и другие emoji 🐭🐼🐻🦊🐱🐱...</li>
+                <li class="popup__rules-item">Нужно поймать мышь. При клике по мыши игроку добавляется +10 очков. </li>
+                <li class="popup__rules-item">После каждой пятой пойманной мыши скорость её случайного появления увеличивается.</li>
+                <li class="popup__rules-item">Если клик был выполнен по другому emoji, то у игрока отнимается жизнь. Всего 3 жизни. Если жизни закончились, то игра останавливается.</li>
+            </ul>
+            <div class="popup__accept">
+                <p class="popup__text-big">Ок</p>
+            </div>
+        </div>
+        <script type="text/javascript" src ="scripts.js"></script>
+    </body>
+</html>
