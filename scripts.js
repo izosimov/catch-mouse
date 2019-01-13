@@ -25,8 +25,6 @@ class CatchMouse {
         this.rightEmoji = 'mouse';
 
         this.holes = document.getElementsByClassName('playing-zone__hole');
-        // this.existingEmoji = document.getElementsByClassName('appearance-animal');
-        // this.existingEmoji = document.getElementsByClassName('appearance-animal');
         this.pointsElement = document.getElementById('game-points');
         this.currentLevel = document.querySelector('.character-bar__star .number_small');
         this.hearts = document.getElementsByClassName('character-bar__heart');
